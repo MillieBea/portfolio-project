@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Milena is a front-end developer based in Spain, creating thoughtful, creative and visually engaging websites with a passion for coding and design."
+    />
 
     <title>Milena | Front-End Developer</title>
 
@@ -18,6 +22,10 @@
 
     <link
       href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Gaegu:wght@400;700&family=Goldman:wght@400;700&family=IBM+Plex+Mono:wght@400;500&family=IM+Fell+DW+Pica:ital@0;1&family=IM+Fell+DW+Pica+SC&family=Montez&family=Rubik+80s+Fade&family=Rubik+Dirt&family=Rubik+Pixels&family=Tektur:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
 
@@ -36,9 +44,54 @@
   </head>
 
   <body>
-    <header class="top-bar">
-      <span>MILENA</span>
-      <span>2026©</span>
+    <header>
+      <nav class="navbar navbar-expand-lg portfolio-navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" title="Homepage">
+            MILENA
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html" title="Homepage">
+                  Home
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" title="About Milena">
+                  About me
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="work.html" title="Milena's work">
+                  Work
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" title="Contact Milena">
+                  Contact me
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
@@ -49,42 +102,60 @@
         <span class="hero-symbol hero-cross">+</span>
         <span class="hero-symbol hero-star2">✦</span>
         <span class="hero-symbol hero-x">×</span>
-        <div class="section-label">01 / INTRODUCTION</div>
 
-        <div class="hero-content">
-          <p class="eyebrow hero-greeting">
-            Hello
-            <i
-              class="fa-solid fa-hand"
-              style="color: black; font-size: 32px"
-            ></i>
-            I am
-          </p>
+        <div class="hero-card-container">
+          <div class="hero-card">
+            <!-- FRONT OF BUSINESS CARD -->
+            <div class="hero-card-front">
+              <p class="eyebrow hero-greeting">
+                Hello
+                <i class="fa-solid fa-hand"></i>
+                I am
+              </p>
 
-          <div class="name">
-            <h1 class="name-title">
-              <span>M</span><span>I</span><span>L</span><span>E</span
-              ><span>N</span><span>A</span>
-            </h1>
+              <div class="name">
+                <h1 class="name-title">
+                  <span>M</span>
+                  <span class="name-dot">•</span>
+                  <span>I</span>
+                  <span class="name-dot">•</span>
+                  <span>L</span>
+                  <span class="name-dot">•</span>
+                  <span>E</span>
+                  <span class="name-dot">•</span>
+                  <span>N</span>
+                  <span class="name-dot">•</span>
+                  <span>A</span>
+                </h1>
 
-            <span class="name-nickname">[aka Millie]</span>
+                <span class="name-nickname">[aka Millie]</span>
+              </div>
+
+              <p class="eyebrow">Front-end developer based in Spain</p>
+
+              <p class="hero-description">
+                - I design and build thoughtful digital experiences with code,
+                typography and curiosity -
+              </p>
+            </div>
+
+            <div class="hero-card-back">
+              <p class="card-back-small">LET'S CONNECT</p>
+
+              <h2>Want to work together?</h2>
+
+              <a href="contact.html" class="btn-preview contact-button">
+                Contact me
+              </a>
+            </div>
           </div>
-
-          <p class="eyebrow">Front-end developer based in Spain</p>
-
-          <p class="hero-description">
-            - I design and build thoughtful digital experiences with code,
-            typography and curiosity -
-          </p>
         </div>
-
-        <a href="#contact" class="btn-preview contact-button">Contact me</a>
 
         <div class="scroll-indicator">↓ SCROLL TO EXPLORE</div>
       </section>
 
       <section class="projects">
-        <div class="section-label">02 / SELECTED PROJECTS / ARCHIVE</div>
+        <h2 class="projects-title">• SELECTED PROJECTS •</h2>
 
         <article class="project">
           <div class="container-fluid">
@@ -137,7 +208,7 @@
                   <h2>AI Dictionary of Unspoken Words</h2>
 
                   <p>
-                    An AI-powered dictionary of “unspoken words” using an AI API
+                    An AI-powered dictionary of "unspoken words" using an AI API
                     and carefully designed prompts to interpret complex
                     emotions, ideas, and concepts. The project combines API
                     integration, prompt engineering, and natural language
@@ -157,7 +228,7 @@
               <div class="col-12 col-lg-6 order-1 order-lg-2">
                 <div class="project-image">
                   <img
-                    src="images/aidict.png"
+                    src="images/dictai.png"
                     alt="AI Dictionary - project preview"
                     class="img-fluid"
                   />
@@ -208,6 +279,81 @@
           </div>
         </article>
       </section>
+      <footer class="portfolio-footer">
+        <div class="container">
+          <div class="footer-contact-box row align-items-center">
+            <div class="col-lg-8 text-center text-lg-start">
+              <p class="footer-eyebrow mb-2">WORK INQUIRY</p>
+
+              <h2 class="footer-title mb-3">
+                Let's create something together.
+              </h2>
+
+              <p class="footer-text mb-0">
+                Have a project in mind, an idea you'd like to bring to life, or
+                simply want to say hello? I'd love to hear from you and see how
+                we can create something great together.
+              </p>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0 text-center">
+              <a
+                href="/contact.html"
+                class="btn-preview footer-button"
+                title="Contact Milena"
+              >
+                Get in touch
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-details text-center">
+            <a
+              href="mailto:your@email.com"
+              class="footer-email d-inline-block"
+              title="Email Milena"
+            >
+              milena.wzietek@email.com
+            </a>
+
+            <div
+              class="footer-socials d-flex justify-content-center align-items-center"
+            >
+              <a
+                href="mailto:milena.wzietek@email.com"
+                aria-label="Email"
+                title="Email Milena"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+
+              <a
+                href="https://github.com/repos"
+                aria-label="GitHub"
+                target="_blank"
+                title="Github profile"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+
+              <a
+                href="https://app.netlify.com/teams/millibea/projects"
+                target="_blank"
+                aria-label="Netlify"
+                title="Netlify profile"
+              >
+                <i class="fa-solid fa-globe"></i>
+              </a>
+            </div>
+          </div>
+
+          <p class="footer-copyright text-center mb-0">
+            Coded by
+            <a href="https://bespoke-duckanoo-4147cb.netlify.app/">MILENA</a> ©
+            2026
+          </p>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
