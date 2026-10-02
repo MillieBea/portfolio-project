@@ -15,6 +15,7 @@
 
 html {
   scroll-behavior: smooth;
+  min-height: 100%;
 }
 
 body {
@@ -27,6 +28,10 @@ body {
   border: 28px solid #000;
   min-height: 100%;
   padding-top: 80px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio-navbar {
@@ -965,6 +970,7 @@ p {
 }
 .contact-section-container {
   position: relative;
+  flex: 1;
   min-height: auto;
   padding: 25px 25px 10px;
 
