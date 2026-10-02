@@ -1633,3 +1633,72 @@ p {
     text-align: center;
   }
 }
+@media (max-width: 991px) {
+  .portfolio-navbar .navbar-toggler {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    width: 44px !important;
+    height: 38px !important;
+
+    padding: 5px 8px !important;
+
+    border: 2px solid #333 !important;
+    border-radius: 8px;
+
+    background: #e8e1d7 !important;
+    opacity: 1 !important;
+
+    transition:
+      border-color 0.25s ease,
+      transform 0.25s ease;
+  }
+
+  .portfolio-navbar .navbar-toggler:hover {
+    border-color: #7a2638 !important;
+    transform: rotate(-2deg);
+  }
+
+  .portfolio-navbar .navbar-toggler .hamburger-line {
+    display: block !important;
+
+    width: 22px !important;
+    height: 2px !important;
+
+    min-width: 22px;
+    min-height: 2px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: #333 !important;
+
+    border: 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transition:
+      width 0.25s ease,
+      background-color 0.25s ease,
+      transform 0.25s ease;
+  }
+
+  .portfolio-navbar .navbar-toggler:hover .hamburger-line {
+    background: #7a2638 !important;
+  }
+
+  .portfolio-navbar .navbar-toggler:hover .hamburger-line:nth-child(1) {
+    width: 16px !important;
+  }
+
+  .portfolio-navbar .navbar-toggler:hover .hamburger-line:nth-child(3) {
+    width: 16px !important;
+  }
+
+  .portfolio-navbar .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+}
