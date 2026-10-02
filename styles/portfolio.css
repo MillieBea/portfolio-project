@@ -1209,6 +1209,13 @@ p {
     text-align: center;
   }
 }
+@media (max-width: 1151px) and (min-width: 992px) {
+  .work-image {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+  }
+}
 
 @media (max-width: 767px) {
   .top-bar {
